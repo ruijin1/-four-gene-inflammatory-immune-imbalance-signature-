@@ -1,0 +1,22 @@
+# Python dependencies for the analysis scripts in this repository.
+# Versions are lower bounds; the analysis was run with Python 3.13 and
+# scanpy 1.12.4. Use a virtual environment.
+
+# core statistics and tabular data
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+scikit-learn>=1.4
+statsmodels>=0.14
+openpyxl>=3.1
+
+# plotting
+matplotlib>=3.8
+
+# single-cell analysis (08_singlecell_hpa/, plus plotting helpers)
+scanpy>=1.10
+anndata>=0.10
+pydeseq2>=0.4
+
+# image handling (figure assembly)
+Pillow>=10.0
