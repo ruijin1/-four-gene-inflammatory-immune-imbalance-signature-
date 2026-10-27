@@ -1,0 +1,7 @@
+﻿definition,IRG definition,valid,CD3G,PRTN3,CD6,THBS1,four_all_pct_lower_bound
+Def-1a,As used in the manuscript - module exported from the original Cytoscape session (28 genes),100,52,63,48,91,48
+Def-1,As used in the manuscript - module recomputed by the re-implementation (25 genes),100,53,61,71,92,53
+Def-2,"GO:0006954 (inflammatory response, with descendant terms)",100,0,0,92,90,0
+Def-3,MSigDB HALLMARK_INFLAMMATORY_RESPONSE,100,0,0,0,0,0
+Def-4,Union of four immune-response GO terms (0006954/0006955/0045087/0002526),100,17,56,78,96,17
+Def-5,Broad union: Def-4 plus eight inflammation-related Hallmark sets,100,51,71,63,89,51

@@ -1,0 +1,7 @@
+﻿definition,IRG definition,genes on array,DE-IRGs,n_module,modal_set,modal_freq_pct,n_modal_genes,four_all_in_modal,CD3G_pct,PRTN3_pct,CD6_pct,THBS1_pct
+Def-1a,As used in the manuscript - module exported from the original Cytoscape session (28 genes),1498,57,28,"CD3G,CD6,PRTN3,THBS1",49,4,True,100,63,100,100
+Def-1,As used in the manuscript - module recomputed by the re-implementation (25 genes),1498,57,25,"CD3G,CD6,PRTN3,THBS1",52,4,True,100,53,100,100
+Def-2,"GO:0006954 (inflammatory response, with descendant terms)",319,27,27,"ALOX15,CD6,KLRG1,SEMA7A,THBS1",72,5,False,0,0,100,100
+Def-3,MSigDB HALLMARK_INFLAMMATORY_RESPONSE,94,15,15,"CD82,ITGB3,LCK,NFKBIA,RASGRP1",75,5,False,0,0,0,0
+Def-4,Union of four immune-response GO terms (0006954/0006955/0045087/0002526),845,61,29,"ALOX15,ALOX5,CD3E,CD3G,CD6,THBS1",61,6,False,61,38,100,100
+Def-5,Broad union: Def-4 plus eight inflammation-related Hallmark sets,1090,74,27,"CD3G,CD6,PRTN3,THBS1",69,4,True,100,73,100,100

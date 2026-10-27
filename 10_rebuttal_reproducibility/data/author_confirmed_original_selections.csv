@@ -1,0 +1,17 @@
+﻿Method,Gene,Note
+LASSO,CD3G,"Author-confirmed original output (2026-10-26, clipboard screenshot of当年运行结果)"
+LASSO,PRTN3,
+LASSO,CD6,
+LASSO,THBS1,
+SVM-RFE,CD3G,
+SVM-RFE,THBS1,
+SVM-RFE,CD6,
+SVM-RFE,BCL11B,
+SVM-RFE,CD3E,
+SVM-RFE,PRTN3,
+SVM-RFE,CD27,
+SVM-RFE,ALOX5,
+Intersection,CD3G,"LASSO ∩ SVM-RFE = published four-gene panel; matches manuscript Results verbatim"
+Intersection,PRTN3,
+Intersection,CD6,
+Intersection,THBS1,
