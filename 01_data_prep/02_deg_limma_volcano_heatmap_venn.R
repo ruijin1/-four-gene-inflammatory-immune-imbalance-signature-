@@ -14,7 +14,7 @@ P <- function(rel) file.path(REPO_ROOT, rel)
 
 # =============================================================================
 # 02  Differential expression analysis (limma) + volcano plot + heatmap + DEG/IRG Venn diagram
-# Manuscript: Methods, "Differential expression analysis"; Fig 2A-C; Additional file 4
+# Manuscript: Methods, "Differential expression analysis"; Fig 2A-C; Supplementary Data S4
 # [RECONSTRUCTED] Rewritten from the written description in the Methods section, for code release (Zenodo/GitHub) and reviewer reproducibility.
 # NOTE: not validated in the original authors' analysis environment. Verify locally against the existing result files before use.
 # =============================================================================
@@ -48,7 +48,7 @@ ph  <- pheatmap(expr[top, ], scale = "row", clustering_distance_rows = "euclidea
                 annotation_col = data.frame(Group = group, row.names = colnames(expr)))
 ggsave("results/heatmap_DEG.pdf", ph$gtable, width = 7, height = 8)
 
-## ---- DEG & IRG = DE-IRG (n = 57, Additional file 4), drawn with VennDiagram ----
+## ---- DEG & IRG = DE-IRG (n = 57, Supplementary Data S4), drawn with VennDiagram ----
 irg  <- read.csv("data/IRG_union_3336.csv")$symbol
 deirg <- intersect(deg_sig$symbol, irg)
 write.csv(data.frame(DE_IRG = deirg), "results/DE_IRG_57.csv", row.names = FALSE)

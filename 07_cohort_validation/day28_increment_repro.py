@@ -40,6 +40,6 @@ for _ in range(B):
     idx = RNG.integers(0, len(ytr), len(ytr))
     a,b = nri_idi(ytr[idx], po[idx], pn[idx]); nris.append(a); idis.append(b)
 nlo,nhi = np.percentile(nris,[2.5,97.5]); ilo,ihi = np.percentile(idis,[2.5,97.5])
-print('=== Reproduction reference: day-14 training set (AF13 records +0.028 / NRI +0.801 (0.303, 1.252) / IDI +0.073 (0.016, 0.134)) ===')
+print('=== Reproduction reference: day-14 training set (values reported in the manuscript: dAUC +0.028 / NRI +0.801 (0.303, 1.252) / IDI +0.073 (0.016, 0.134)) ===')
 print('  n=%d  AUC perinatal %.4f  combined %.4f  dAUC %+.4f  DeLong P=%.4f' % (len(ytr), a_old, a_new, a_new-a_old, pv))
 print('  NRI %+.3f (%.3f, %.3f)   IDI %+.3f (%.3f, %.3f)' % (nri,nlo,nhi,idi,ilo,ihi))

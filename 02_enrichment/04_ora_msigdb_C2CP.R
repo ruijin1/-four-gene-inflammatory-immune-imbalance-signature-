@@ -20,7 +20,7 @@ P <- function(rel) file.path(REPO_ROOT, rel)
 # =============================================================================
 library(clusterProfiler); library(msigdbr); library(dplyr)
 
-irg_1498 <- read.csv("data/IRG_detected_1498.csv")$symbol      # Additional file 5
+irg_1498 <- read.csv("data/IRG_detected_1498.csv")$symbol      # Supplementary Data S5
 expr     <- as.matrix(read.csv("data/GSE32472_day14_expr.csv", row.names = 1))
 bg       <- rownames(expr)
 

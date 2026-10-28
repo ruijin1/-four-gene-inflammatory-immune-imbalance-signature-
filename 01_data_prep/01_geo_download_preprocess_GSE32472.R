@@ -14,7 +14,7 @@ P <- function(rel) file.path(REPO_ROOT, rel)
 
 # =============================================================================
 # 01  GSE32472 data acquisition and preprocessing (day-14 = training set / day-28 = temporal validation set)
-# Manuscript: Methods, "Data collection and preprocessing"; Additional files 1 and 2
+# Manuscript: Methods, "Data collection and preprocessing"; Supplementary Data S1 and S2
 # [RECONSTRUCTED] Rewritten from the written description in the Methods section, for code release (Zenodo/GitHub) and reviewer reproducibility.
 # NOTE: not validated in the original authors' analysis environment. Verify locally against the existing result files before use.
 # =============================================================================
@@ -63,6 +63,6 @@ write.csv(data.frame(sample = day28, group = val28_grp), "data/GSE32472_day28_gr
 print(table(train_grp)); print(table(val28_grp))
 
 ## ---- 5. IRG list: GeneCards v5.22 + MSigDB v2024.1.Hs, search term "inflammatory response" ----
-## merged and de-duplicated from the manual/web searches (Additional file 3; 3,336 IRGs)
+## merged and de-duplicated from the manual/web searches (Supplementary Data S3; 3,336 IRGs)
 # irg <- read.csv("data/IRG_union_3336.csv")$symbol
-# intersection of the IRGs with the genes detected in the training set -> 1,498 (Additional file 5)
+# intersection of the IRGs with the genes detected in the training set -> 1,498 (Supplementary Data S5)

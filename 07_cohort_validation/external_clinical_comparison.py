@@ -114,7 +114,7 @@ clin["gsm"] = clin["gsm"].astype(str)
 clin["case"] = (clin["disease"] == "BPD").astype(int)
 clin["sexM"] = (clin["sex"] == "M").astype(int)
 
-print("=== Sex distribution in the external cohort (Table S15 states sex is unavailable; to be verified) ===")
+print("=== Sex distribution in the external cohort (sex availability to be verified) ===")
 for tag in ("Day14", "Day28"):
     sub = clin[clin["time"] == tag]
     c1 = sub[sub.case == 1]; c0 = sub[sub.case == 0]
