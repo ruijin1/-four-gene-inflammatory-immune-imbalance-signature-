@@ -20,6 +20,7 @@ def P(rel):
 Generate the summary and bootstrap detail for the incremental-value NRI/IDI analysis
 Output:
   - NRI_IDI_summary.json          -- the NRI/IDI numbers reported in the manuscript
+                                     (Supplementary Table S4 "Incremental value")
   - NRI_IDI_bootstrap_detail.csv  -- the NRI/IDI of every iteration (added as a new sheet to Data S6)
 """
 import warnings

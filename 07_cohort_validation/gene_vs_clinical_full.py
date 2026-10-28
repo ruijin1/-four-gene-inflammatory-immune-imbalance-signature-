@@ -107,6 +107,11 @@ def nri_idi(y, p_old, p_new):
     return nri, idi
 
 
+# NOTE: this helper runs B=1000 resamples. PART 4 below uses it as an internal
+# cross-check of the NRI/IDI. The confidence intervals tabulated in the manuscript
+# come from 07_cohort_validation/gen_nri_idi_data.py, which uses B=2000 as stated in
+# the Methods ("95% CIs from 2000 bootstrap resamples"). Do not quote THIS script's
+# intervals in the paper; they differ in Monte-Carlo precision only.
 def boot_ci(fn, n=1000):
     vals = []
     for _ in range(n):
