@@ -19,6 +19,8 @@ Analysis code accompanying the manuscript:
 │                              NRI/IDI, case-definition and birth-weight sensitivity analyses
 ├── 08_singlecell_hpa/         PBMC single-cell localisation (Scanpy), doublet checks, HPA validation
 ├── 09_plotting/               supporting plots
+├── 10_rebuttal_reproducibility/  scripts and inputs behind the numbers quoted in the
+│                              response letter (Data S17 and S18) — see its own README
 ├── lib/                       shared statistics module (DeLong, NRI, IDI, VIF, all-subset AUC)
 ├── docs/                      data sources, environment and workflow
 ├── data/                      input data — not included, see docs/DATA.md
@@ -26,7 +28,10 @@ Analysis code accompanying the manuscript:
 └── figures/                   figure files (created on first run)
 ```
 
-**40 scripts** in total: 12 R, 26 Python, 2 workflow documents.
+**53 scripts** in total: 20 R, 31 Python, 2 workflow documents, plus the 14 input/output
+tables under `10_rebuttal_reproducibility/data/`. The 40 scripts in `01`–`09` reproduce the
+manuscript; the 13 scripts in `10_rebuttal_reproducibility/` reproduce the numbers quoted in
+the response letter and tabulated as Supplementary Data S17 and S18.
 
 **Not included, by design**
 
@@ -115,6 +120,11 @@ Four further scripts belong to the workflow but do not map to a single figure:
 | `08_singlecell_hpa/42_scrublet_doublet_check.py` | Scrublet doublet detection at the expected rates used for the single-cell atlas (QC for Fig 10). |
 | `08_singlecell_hpa/44_doublet_impact.py` | Effect of removing predicted doublets on the cell-type counts (QC for Fig 10). |
 | `09_plotting/13_bootstrap_auc_curve.py` | Bootstrap AUC distribution curve (companion to step 18). |
+
+The analyses added during revision — gene-set-definition sensitivity, SVM-RFE stability, the
+GSE151974 single-cell localisation, the composition/expression decomposition and the
+deconvolution-free marker-set check — sit in **`10_rebuttal_reproducibility/`**; its README maps
+each script to the reviewer comment it answers and to the sheet of Data S17 or S18 it fills.
 
 ## 5. Reproducibility notes
 
