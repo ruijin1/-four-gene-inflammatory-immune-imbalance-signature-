@@ -28,7 +28,7 @@ Analysis code accompanying the manuscript:
 └── figures/                   figure files (created on first run)
 ```
 
-**53 scripts** in total: 20 R, 31 Python, 2 workflow documents, plus the 14 input/output
+**53 scripts** in total: 20 R, 31 Python, 2 workflow documents, plus the 15 input/output
 tables under `10_rebuttal_reproducibility/data/`. The 40 scripts in `01`–`09` reproduce the
 manuscript; the 13 scripts in `10_rebuttal_reproducibility/` reproduce the numbers quoted in
 the response letter and tabulated as Supplementary Data S17 and S18.
