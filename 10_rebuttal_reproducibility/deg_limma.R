@@ -22,9 +22,9 @@ out <- data.frame(Gene = rownames(tt), logFC = tt$logFC,
 write.csv(out, file.path(tmp, "deg_limma.csv"), row.names = FALSE)
 
 cat("n genes tested:", nrow(out), "\n")
-cat("FDR<0.05 & |logFC|>0.5 :", sum(out$FDR < 0.05 & abs(out$logFC) > 0.5), "\n")
+cat("FDR<0.05 & |logFC|>0.58:", sum(out$FDR < 0.05 & abs(out$logFC) > 0.58), "\n")
 cat("FDR<0.05               :", sum(out$FDR < 0.05), "\n")
-cat("|logFC|>0.5            :", sum(abs(out$logFC) > 0.5), "\n")
+cat("|logFC|>0.58           :", sum(abs(out$logFC) > 0.58), "\n")
 four <- c("CD3G", "PRTN3", "CD6", "THBS1")
 cat("--- four signature genes ---\n")
 print(out[out$Gene %in% four, ])

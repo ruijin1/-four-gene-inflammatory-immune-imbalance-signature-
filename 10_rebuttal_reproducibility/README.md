@@ -14,8 +14,8 @@ marker-set check, Data S18).
 
 | Script | Reproduces | Notes |
 |---|---|---|
-| `deg_limma.R` | 139 DEGs (84 up / 55 down) from GSE32472 day-14 | limma moderated t, raw *P* < 0.05 and \|log2FC\| > 0.58; 57 DE-IRGs after intersecting the 3,336 inflammatory-response genes |
-| `lasso_by_definition.R` | LASSO selection under five alternative inflammatory-response gene definitions | glmnet, `lambda.min`, 10-fold CV; modal solution across 100 seeds |
+| `deg_limma.R` | 139 DEGs (84 up / 55 down) from GSE32472 day-14 | limma moderated t, Benjamini–Hochberg adjusted *P* < 0.05 and \|log2FC\| > 0.58; 57 DE-IRGs after intersecting the 3,336 inflammatory-response genes |
+| `lasso_by_definition.R` | LASSO selection under the manuscript definition and four alternatives (five in total) | glmnet, `lambda.min`, 10-fold CV; modal solution across 100 seeds |
 | `lasso_svm_repro.R` | LASSO + SVM-RFE on the 28-gene CytoHubba module | reproduces the four-gene signature CD3G / CD6 / PRTN3 / THBS1 |
 | `svmrfe_avgrank_repro.R` | SVM-RFE average-rank aggregation | 20 resamples at 80%, linear kernel, `cost = 0.05`, standardised predictors |
 | `svmrfe_avgrank_grid2.R` | grid check of the resample/cost settings used above | sensitivity of the retained gene set |
