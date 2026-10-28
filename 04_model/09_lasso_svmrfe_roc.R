@@ -14,7 +14,7 @@ P <- function(rel) file.path(REPO_ROOT, rel)
 
 # =============================================================================
 # 09  LASSO (glmnet 4.1-7) + SVM-RFE + ROC (pROC)
-# Manuscript: Methods, "Identification of diagnostic biomarkers"; Fig 5A-C
+# Manuscript: Methods, "Identification of diagnostic biomarkers"; Fig 4F-H; Fig 5D-E
 # [RECONSTRUCTED] Rewritten from the written description in the Methods section, for code release (Zenodo/GitHub) and reviewer reproducibility.
 # NOTE: not validated in the original authors' analysis environment. Verify locally against the existing result files before use.
 # =============================================================================

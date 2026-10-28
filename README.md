@@ -96,8 +96,8 @@ Every script carries a `Status:` line in its header. Three categories:
 | 12 | A549 qRT-PCR (2^-ΔΔCt) | `06_validation/12_qpcr_ddct_analysis.R` | Fig 5J | reconstructed |
 | 13 | Mouse GSE25286 limma re-analysis | `06_validation/gse25286_limma_recalc.R` | Table S5 | original |
 | 14 | Day-28 temporal validation (coefficients locked) | `07_cohort_validation/external_validation_gse32472.py` | Fig 5F-G | original |
-| 15 | External cohort GSE220135 (DESeq2 vst) | `07_cohort_validation/rnaseq_deseq2.py` | Table S2 | original |
-| 16 | ROC / Youden threshold | `07_cohort_validation/roc_diagnosis_4v3.py` | Fig 5D-E; Table S3 | original |
+| 15 | External cohort GSE220135 (DESeq2 vst) | `07_cohort_validation/rnaseq_deseq2.py` | Fig 5M-N; Table S2 | original |
+| 16 | External-cohort ROC / Youden threshold (GSE220135) | `07_cohort_validation/roc_diagnosis_4v3.py` | Fig 5K-L; Table S3 | original |
 | 17 | External ΔAUC and model comparison | `07_cohort_validation/external_delta_auc.py`, `external_clinical_comparison.py` | Table S2 | original |
 | 18 | 1000× bootstrap internal validation | `07_cohort_validation/bootstrap_auc_internal_validation.py`, `plot_bootstrap*.py` | Fig S1, S5; Data S6 | original |
 | 19 | Gestational age / birth weight matching and stratification | `07_cohort_validation/ga_match_strat.py`, `auc_broad_grouping.py` | Table S3 | original |
@@ -120,6 +120,11 @@ Four further scripts belong to the workflow but do not map to a single figure:
 | `08_singlecell_hpa/42_scrublet_doublet_check.py` | Scrublet doublet detection at the expected rates used for the single-cell atlas (QC for Fig 10). |
 | `08_singlecell_hpa/44_doublet_impact.py` | Effect of removing predicted doublets on the cell-type counts (QC for Fig 10). |
 | `09_plotting/13_bootstrap_auc_curve.py` | Bootstrap AUC distribution curve (companion to step 18). |
+
+> **Panels without a dedicated plotting script.** Figure 5H–I (hub-gene group comparisons in the
+> day-14 and day-28 GSE32472 datasets) are rendered directly from the processed expression matrices
+> produced by step 2; the repository does not archive a separate script for drawing these two panels.
+> The underlying per-gene statistics reproduce those reported in the figure legend.
 
 The analyses added during revision — gene-set-definition sensitivity, SVM-RFE stability, the
 GSE151974 single-cell localisation, the composition/expression decomposition and the
