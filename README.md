@@ -1,8 +1,8 @@
-# Four-gene inflammatory signature (CD3G/PRTN3/CD6/THBS1) for moderate-to-severe bronchopulmonary dysplasia
+# Blood-based four-gene inflammatory signature (CD3G/PRTN3/CD6/THBS1) for moderate-to-severe bronchopulmonary dysplasia
 
 Analysis code accompanying the manuscript:
 
-> **A Four-Gene Inflammatory Immune-Imbalance Signature (CD3G/PRTN3/CD6/THBS1) in Moderate-to-Severe Bronchopulmonary Dysplasia: A Machine-Learning and Cross-Platform Validation Study**
+> **A Blood-Based Four-Gene Inflammatory Signature (CD3G/PRTN3/CD6/THBS1) for Moderate-to-Severe Bronchopulmonary Dysplasia: A Machine-Learning and Cross-Platform Validation Study**
 
 ---
 
