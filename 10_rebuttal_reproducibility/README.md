@@ -27,6 +27,7 @@ marker-set check, Data S18).
 | `decompose_pseudobulk.py` | decomposition of the bulk *Cd3g* decline into cell-composition versus per-cell expression components (Reviewer 2, major 3) | shows the bulk change is attributable to a smaller T-cell fraction rather than to lower per-cell expression |
 | `blood_marker_check.py` | deconvolution-free marker-set test for lung-derived contamination of the whole-blood signal (Reviewer 1, major 4) | run on the GSE32472 day-14 matrix; T-cell, neutrophil, platelet, immature-granulocyte, airway/alveolar epithelial and endothelial sets, reported as standardised differences with BH-adjusted FDR |
 | `make_S18.py` | builds `Data S18.xlsx` from the CSV outputs | marker-set analysis plus the four GSE151974 summary tables; requires `pandas`, `openpyxl` |
+| `three_gene_sensitivity.py` | three-gene (CD3G/CD6/THBS1) sensitivity analysis added in the **second revision** (Results subsection “Three-gene sensitivity analysis (removal of PRTN3)” and Supplementary Table S10) | refits the three-gene model in the training set by maximum likelihood and applies the coefficients without re-estimation to the Day-28 subset and to GSE220135; reports AUC, ΔAUC, DeLong test, continuous NRI and IDI with 2000-iteration bootstrap. **Self-contained**: ships with its own inputs in `data/three_gene/`, so no path editing is needed — `python three_gene_sensitivity.py --data-dir data/three_gene --out output` |
 
 ## Input data
 
@@ -45,6 +46,12 @@ marker-set check, Data S18).
   outputs tabulated as sheets 2–5 of Supplementary Data S18.
 - `4gene_localisation.csv` — per-cell-type expression and detection proportions
   for the four genes in the hyperoxia-exposed newborn mouse lung.
+- `data/three_gene/*.csv` — inputs of `three_gene_sensitivity.py`: four-gene
+  expression and outcome for the training set (n = 63), the Day-28 within-cohort
+  subset (n = 62, including the manuscript's four-gene probabilities) and
+  GSE220135 at postnatal days 14 and 28 (n = 68 each), restricted to the four
+  signature genes. These files are small and are redistributed here so that the
+  script runs out of the box.
 
 ## Environment
 
